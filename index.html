@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <title>index.html</title>
+</head>
+<body style="border: 4ch;">
+    <div class="card p-5" style="margin: 50px 12%; background-color: rgb(187, 202, 200)">
+        <div class="card-body"> 
+            <form action="" method="get">
+		<fieldset id="show" style="text-align:centre" >
+                <h3 style="text-align: center;">EB BILL CALCULATOR</h3><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6"  style="text-align: center;">
+                            <label for="" class="form-label" ><b> Tariff Check </b> </label>
+                        </div>
+                        <div class="col-6" style="box-shadow: 1ch;">
+                            <select name="tariff" id="tariff">
+                                <option value=""></option>
+                                <option value="DOMESTIC">Domestic</option>
+                                <option value="INDUSTRY">Industry</option>    
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"  style="text-align: center;">
+                            <label for="" class="form-label" required ><b> Billing cycle</b></label>
+                        </div>
+                        <div class="col-6">
+                            <select name="month" id="month">
+                                <option value=""></option>
+                                <option value="Bi-monthly">Bi-monthly </option>
+                                <option value="monthly">monthly</option>    
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"  style="text-align: center">
+                            <label for="units" class="form-label" ><b>Consumed units</b></label>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="units" name="units" class="form-control" style="max-width: 9em; max-height: 3ch; align-content: center;" >
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5">
+                            
+                        </div>
+                        <div class="col">
+                            <button 
+				class="btn btn-light mt-3"
+				type="button"
+				onclick="calc()"
+			     	>Calculate
+			     </button>
+                        </div>
+                        <div class="col-5">
+                            
+                        </div>
+                    </div>
+                </div>
+		</fieldset>
+            </form>
+        </div>
+    </div>   <script src="./script.js"></script>     
+</body>
+</html>
